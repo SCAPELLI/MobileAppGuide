@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="styles.css">
     </head>
 
-<h1>App Mobile - Guia de uso</h1>
+<h1>App Mobile - Guía de uso</h1>
 <body class="body">
 <div class="section-container">
     <ol>
@@ -47,7 +47,7 @@
     </ol>
 </div>
 
-
+<!-- ------------------------------------------------------------------------ -->
 <div style="width: 700px;">    
     <h3
         id="Login"
@@ -58,19 +58,31 @@
     > > Inicio de sesión</h3>
 </div>
 <hr class="section-underline"/>
-<!-- ------------------------------------------------------------------------ -->
+<!-- ------------- -->
 <div id="login-section" class="section-container">
     
     <div class="subsection-container">
         <img class="subsection-image" src="imgs/login/login.jpg" width="200">
         <span class="subsection-text">
-            Los usuarios registrados podrán ingresar a la plataforma de diversas maneras: 
-            <ul style="margin-bottom: 1rem;">
-                <li>Usando su correo y contraseña.</li>
-                <li>Usando su correo de Google, en caso de haberse registrado con la opcion "registrarse con Google".</li>
-                <li>Usando su huella dactilar, en caso de haber enrollado su huella en los ajustes de la aplicación.</li>
-            </ul>
+            <div>
+                Los usuarios registrados podrán ingresar a la plataforma de diversas maneras: 
+                <ul style="margin-bottom: 1rem;">
+                    <li>Usando su correo y contraseña.</li>
+                    <li>Usando su correo de Google, en caso de haberse registrado con la opcion "registrarse con Google".</li>
+                    <li>Usando su huella dactilar, en caso de haber enrollado su huella en los ajustes de la aplicación.</li>
+                </ul>
+            </div>
         </span>
+    </div>
+    <hr class="separator">
+<!-- ------- -->
+    <div class="subsection-container">
+        <span class="subsection-text">
+            <div>
+                En caso de ser entrenador y atleta, se deberá elegir el rol con el que se desea ingresar.
+            </div>
+        </span>
+        <img class="subsection-image" src="imgs/login/mix-user.jpeg" width="200">
     </div>
 </div>
 <!-- ------------------------------------------------------------------------ -->
@@ -85,15 +97,17 @@
 </div>
 <hr class="section-underline"/>
 
-<!-- ------------------------------------------------------------------------ -->
+<!-- -------------------------- -->
 <div id="register-section" class="section-container">
     
     <div class="subsection-container">
         <img class="subsection-image" src="imgs/register/registro_rol.jpg" width="200">
         <span class="subsection-text">
-            El usuario podrá registrarse desde la ventana de inicio de sesión. <p>
-            Primero se debe elegir entre dos roles: <b>Entrenador</b> o <b>Atleta</b>. <br> 
-            Se permite la elección de ambos roles.
+            <div>
+                El usuario podrá registrarse desde la ventana de inicio de sesión. <p>
+                Primero se debe elegir entre dos roles: <b>Entrenador</b> o <b>Atleta</b>. <br> 
+                Se permite la elección de ambos roles.
+            </div>
         </span>
     </div>
 
@@ -115,7 +129,7 @@
     <div class="subsection-container">
         <img class="subsection-image" src="imgs/register/pin.jpeg" width="200">
         <span class="subsection-text">
-            A continuacion se deberá ingresar el número de pin enviado a WhatsApp
+            A continuación se deberá ingresar el número de pin enviado a WhatsApp
         </span>
     </div>
 
@@ -126,6 +140,130 @@
             Finalmente se deberan indicar los intereses deportivos
         </span>
         <img class="subsection-image" src="imgs/register/intereses.jpeg" width="200">
+    </div>
+</div>
+<!-- ------------------------------------------------------------------------ -->
+
+<!-- ------------------------------------------------------------------------ -->
+<div style="width: 700px;">    
+    <h3
+        id="Profile"
+        style="font-weight: normal;"
+        onmouseover="highlight(this)" 
+        onmouseout="removeHighlight(this)"
+        onclick="changeArrow(this); toggleSection('profile-section')"
+    > > Perfil</h3>
+</div>
+<hr class="section-underline"/>
+<!-- ------------- -->
+<div id="profile-section" class="section-container">
+    
+    <div class="subsection-container">
+        <img class="subsection-image" src="imgs/profile/profile.jpeg" width="200">
+        <span class="subsection-text">
+            Cada usuario contará con un perfil, el cual podrá modificar desde el botón de edición.
+        </span>
+    </div>
+    <hr class="separator">
+<!-- ------------- -->
+    <div class="subsection-container">
+        <span class="subsection-text">
+            <div>
+                En la edición del perfil se podrá modificar la información personal, 
+                los intereses deportivos y la foto de perfil. También se podrá cambiar la contraseña. <p>
+                En caso de ser entrenador y atleta, se podrá cambiar el rol actual de la sesión.
+            </div>
+        </span>
+        <img class="subsection-image" src="imgs/profile/edition.jpeg" width="200">
+    </div>
+    <hr class="separator">
+<!-- ------------- -->
+    <div class="subsection-container">
+        <img class="subsection-image" src="imgs/profile/edition-fingerprint.jpeg" width="200">
+        <img class="subsection-image" src="imgs/profile/edition-password.jpeg" width="200">
+    </div>
+    <hr class="separator">
+<!-- ------------- -->
+    <div class="subsection-container">
+        <span class="subsection-text">
+            <div>
+                También se podrá visualizar el perfil de otros usuarios.
+            </div>
+        </span>
+        <img class="subsection-image" src="imgs/" width="200">
+    </div>
+</div>
+<!-- ------------------------------------------------------------------------ -->
+<!-- ------------------------------------------------------------------------ -->
+<div style="width: 700px;">    
+    <h3
+        id="Trainings"
+        style="font-weight: normal;"
+        onmouseover="highlight(this)" 
+        onmouseout="removeHighlight(this)"
+        onclick="changeArrow(this); toggleSection('training-section')"
+    > > Entrenamientos para atletas</h3>
+</div>
+<hr class="section-underline"/>
+<!-- ------------- -->
+<div id="training-section" class="section-container">
+    
+    <div class="subsection-container">
+        <img class="subsection-image" src="imgs/trainings/trainings.jpeg" width="200">
+        <span class="subsection-text">
+            Los atletas podrán acceder a diversos listados de entrenamientos. <br>
+            Incluyendo:
+            <ul>
+                <li>Entrenamientos suscriptos</li>
+                <li>Entrenamientos favoritos</li>
+                <li>Entrenamientos recomendados</li>
+            </ul>
+            Además, se podrán visualizar los entrenamientos creados por otros entrenadores y los suscriptos por otros atletas.
+        </span>
+    </div>
+    <hr class="separator">
+<!-- ------------- -->
+    <div class="subsection-container">
+        <span class="subsection-text">
+            <div>
+                Los listados de entrenamientos disponen de filtros para facilitar la búsqueda.
+            </div>
+        </span>
+        <img class="subsection-image" src="imgs/" width="200">
+    </div>
+</div>
+<!-- ------------------------------------------------------------------------ -->
+<!-- ------------------------------------------------------------------------ -->
+<div style="width: 700px;">    
+    <h3
+        id="Training-creaction"
+        style="font-weight: normal;"
+        onmouseover="highlight(this)" 
+        onmouseout="removeHighlight(this)"
+        onclick="changeArrow(this); toggleSection('training-creation-section')"
+    > > Creación de entrenamientos</h3>
+</div>
+<hr class="section-underline"/>
+<!-- ------------- -->
+<div id="training-creation-section" class="section-container">
+    
+    <div class="subsection-container">
+        <img class="subsection-image" src="imgs/profile/profile.jpeg" width="200">
+        <span class="subsection-text">
+            Cada usuario contará con un perfil, el cual podrá modificarse desde el botón de edición.
+        </span>
+    </div>
+    <hr class="separator">
+<!-- ------------- -->
+    <div class="subsection-container">
+        <span class="subsection-text">
+            <div>
+                En la edición del perfil se podrá modificar la información personal, 
+                los intereses deportivos y la foto de perfil. También se podrá cambiar la contraseña. <p>
+                En caso de ser entrenador y atleta, se podrá cambiar el rol actual de la sesión.
+            </div>
+        </span>
+        <img class="subsection-image" src="imgs/profile/edition.jpeg" width="200">
     </div>
 </div>
 <!-- ------------------------------------------------------------------------ -->

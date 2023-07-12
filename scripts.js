@@ -8,10 +8,12 @@ function toggleSection(sectionId) {
 }
 
 function highlight(element) {
+    element.classList.add('pointer-cursor');
     element.style.fontWeight = 'bold';
 }
   
 function removeHighlight(element) {
+    element.classList.remove('pointer-cursor');
     element.style.fontWeight = 'normal';
 }
 

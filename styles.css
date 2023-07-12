@@ -16,15 +16,19 @@ body {
     margin-top: -0.5rem;
 }
 
+h3.pointer-cursor {
+    cursor: pointer;
+}
+
 .section-container {
     display: none;
     border-radius: 1em;
-    border: 2px solid #969696; 
-    background-color: aliceblue;
+    border: 2px solid #969696;
+    background-color: rgba(240, 248, 255, 0.75);
 }
 
 .subsection-container {
-    display: flex; 
+    display: flex;
     justify-content: center;
     align-items: center;
 }
