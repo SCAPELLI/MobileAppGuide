@@ -1,5 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html style="
+    background-image: url('imgs/background/background.jpg');
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    ">
 
     <head>
        <title>App Mobile - Guía de uso</title>
@@ -8,87 +14,122 @@
 
 <h1>App Mobile - Guia de uso</h1>
 <body class="body">
-<div>
-    
-    <div class="section-container">
-        <ol>
-            <h4>Contenidos</h4>
-            <li>
-                <a href="#Register">Registro</a>
-            </li>
-            <li>
-                <a href="#Login">Inicio de sesión</a>
-            </li>
-            <li>
-                <a href="#ListServices">Listar servicios</a>
-            </li>
-            <li>
-                <a href="#AddAdmin">Agregar administradores</a>
-            </li>
-            <li>
-                <a href="#SearchUser">Buscar usuarios</a>
-            </li>
-            <li>
-                <a href="#EditTrainings">Administrar entrenamientos</a>
-            </li>
-            <li>
-                <a href="#BlockServices">Bloquear servicios</a>
-            </li>
-            <li>
-                <a href="#EntrenadorReconocido">Aprobar/rechazar petiticiones de entrenador reconocido</a>
-            </li>
-            <li>
-                <a href="#Metrics">Métricas</a>
-            </li>
-        </ol>
-    </div>
-</div>
-
-<h3 id="Register">Registro</h3>
 <div class="section-container">
-    
-    <div style="display: flex; justify-content: center;">
-        <img src="imgs/register/registro_rol.jpg" width="200" style="margin-left: 2rem; margin-right: 2rem;">
-        <div>
-            El usuario podrá registrarse desde la ventana de inicio de sesión. <br>
-            Primero se debe elegir entre dos roles: <br>
-            Entrenador y Atleta. Se permite la elección de ambos roles.
-        </div>
-    </div>
-
-    <div>Se podrá continuar de dos maneras:</div>
-    <ul style="margin-bottom: 1rem;">
-        <li>Ingresando los datos personales manualmente</li>
-        <li>Utilizando los datos de una cuenta de Google</li>
-    </ul>
-    <div style="display: flex;">
-        <img src="imgs/register/registro.jpg" width="200" style="margin-left: 2rem; margin-right: 2rem;">
-        
-    </div>
-
-    <div>A continuacion se deberá ingresar el pin enviando a WhatsApp</div>
-    <img src="imgs/register/pin.jpeg" width="200" style="margin-left: 2rem; margin-right: 2rem;">
-
-    <div>Finalmente se deberan indicar los intereses deportivos</div>
-    <img src="imgs/register/intereses.jpeg" width="200" style="margin-left: 2rem; margin-right: 2rem;">
+    <ol>
+        <h4>Contenidos</h4>
+        <li>
+            <a href="#register-heading">Registro</a>
+        </li>
+        <li>
+            <a href="#Login">Inicio de sesión</a>
+        </li>
+        <li>
+            <a href="#ListServices">Listar servicios</a>
+        </li>
+        <li>
+            <a href="#AddAdmin">Agregar administradores</a>
+        </li>
+        <li>
+            <a href="#SearchUser">Buscar usuarios</a>
+        </li>
+        <li>
+            <a href="#EditTrainings">Administrar entrenamientos</a>
+        </li>
+        <li>
+            <a href="#BlockServices">Bloquear servicios</a>
+        </li>
+        <li>
+            <a href="#EntrenadorReconocido">Aprobar/rechazar petiticiones de entrenador reconocido</a>
+        </li>
+        <li>
+            <a href="#Metrics">Métricas</a>
+        </li>
+    </ol>
 </div>
 
 
-
-<div style="display: flex; flex-direction: column; align-items: flex-start;">
-    <h3 id="Login">Inicio de sesión</h3>
-    Los usuarios registrados podrán ingresar a la plataforma de diversas maneras: 
-    <ul style="margin-bottom: 1rem;">
-        <li>Usando su correo y contraseña.</li>
-        <li>Usando su correo de Google, en caso de haberse registrado con la opcion "registrarse con Google".</li>
-        <li>Usando su huella dactilar, en caso de haber enrollado su huella en los ajustes de la aplicación.</li>
-    </ul>
-    
-    <div style="margin-left: 2rem; margin-right: 2rem;">
-        <img src="imgs/login/login.jpg" width="200" style="margin-left: 2rem; margin-right: 2rem;">
-    </div>   
+<div style="width: 700px;">    
+    <h3
+        id="Login"
+        style="font-weight: normal;"
+        onmouseover="highlight(this)" 
+        onmouseout="removeHighlight(this)"
+        onclick="changeArrow(this); toggleSection('login-section')"
+    > > Inicio de sesión</h3>
 </div>
+<hr class="section-underline"/>
+<!-- ------------------------------------------------------------------------ -->
+<div id="login-section" class="section-container">
+    
+    <div class="subsection-container">
+        <img class="subsection-image" src="imgs/login/login.jpg" width="200">
+        <span class="subsection-text">
+            Los usuarios registrados podrán ingresar a la plataforma de diversas maneras: 
+            <ul style="margin-bottom: 1rem;">
+                <li>Usando su correo y contraseña.</li>
+                <li>Usando su correo de Google, en caso de haberse registrado con la opcion "registrarse con Google".</li>
+                <li>Usando su huella dactilar, en caso de haber enrollado su huella en los ajustes de la aplicación.</li>
+            </ul>
+        </span>
+    </div>
+</div>
+<!-- ------------------------------------------------------------------------ -->
 
+<div style="width: 700px;">    
+    <h3
+        style="font-weight: normal;"
+        onmouseover="highlight(this)" 
+        onmouseout="removeHighlight(this)"
+        onclick="changeArrow(this); toggleSection('register-section')"
+    > > Registro</h3>
+</div>
+<hr class="section-underline"/>
+
+<!-- ------------------------------------------------------------------------ -->
+<div id="register-section" class="section-container">
+    
+    <div class="subsection-container">
+        <img class="subsection-image" src="imgs/register/registro_rol.jpg" width="200">
+        <span class="subsection-text">
+            El usuario podrá registrarse desde la ventana de inicio de sesión. <p>
+            Primero se debe elegir entre dos roles: <b>Entrenador</b> o <b>Atleta</b>. <br> 
+            Se permite la elección de ambos roles.
+        </span>
+    </div>
+
+    <hr class="separator">
+<!-- ------- -->
+    <div class="subsection-container">
+        <span class="subsection-text">
+            <div>Se podrá continuar de dos maneras:</div>
+            <ul style="margin-bottom: 1rem;">
+                <li>Ingresando los datos personales manualmente</li>
+                <li>Utilizando los datos de una cuenta de Google</li>
+            </ul>
+        </span>
+        <img class="subsection-image" src="imgs/register/registro.jpg" width="200">
+    </div>
+
+    <hr class="separator">
+<!-- ------- -->
+    <div class="subsection-container">
+        <img class="subsection-image" src="imgs/register/pin.jpeg" width="200">
+        <span class="subsection-text">
+            A continuacion se deberá ingresar el número de pin enviado a WhatsApp
+        </span>
+    </div>
+
+    <hr class="separator">
+<!-- ------- -->
+    <div class="subsection-container">
+        <span>
+            Finalmente se deberan indicar los intereses deportivos
+        </span>
+        <img class="subsection-image" src="imgs/register/intereses.jpeg" width="200">
+    </div>
+</div>
+<!-- ------------------------------------------------------------------------ -->
+
+<script src="./scripts.js"></script>
 </body>
-
 </html>
